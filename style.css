@@ -18,14 +18,67 @@ body {
 header {
   display: flex;
   justify-content: space-between;
+  padding: 50px;
 }
 
 hgroup {
   display: flex;
   justify-content: center;
-  margin-top: 150px;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
 }
 
-h1 {
+h1,
+.number {
   font-family: "Peralta", cursive;
+  font-size: 50px;
+}
+
+.number {
+  margin-top: 25px;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.guess {
+  padding: 15px 30px;
+  border: none;
+  font-size: 15px;
+}
+
+.btn {
+  padding: 20px 40px;
+  border: none;
+  border-radius: 25px;
+  background-color: #7fffd4;
+  font-size: 20px;
+  font-family: "Noto Sans Mono", monospace;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #00ffff;
+}
+
+.score,
+.highscore {
+  margin-top: 30px;
 }
