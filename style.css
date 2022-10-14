@@ -102,7 +102,7 @@ main {
 /***************
 responsiveness
 ***************/
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .between {
     order: -1;
   }
@@ -112,6 +112,11 @@ responsiveness
   header {
     justify-content: center;
   }
+  h1,
+  .number {
+  font-family: "Peralta", cursive;
+  font-size: 40px;
+}
   .again {
     margin-top: 20px;
   }
@@ -132,10 +137,12 @@ responsiveness
   }
   .right {
     text-align: center;
+    flex: 0 0 100%;
   }
   .left {
     width: 70%;
     margin: auto;
     margin-bottom: 10px;
+    flex: 0 0 100%;
   }
 }
