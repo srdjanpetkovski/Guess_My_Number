@@ -115,7 +115,7 @@ responsiveness
   h1,
   .number {
   font-family: "Peralta", cursive;
-  font-size: 40px;
+  font-size: 35px;
 }
   .again {
     margin-top: 20px;
@@ -126,23 +126,21 @@ responsiveness
   }
   main {
     display: block;
-    margin-top: 40px;
+    margin-top: 30px;
   }
-  section {
+  /* section {
     flex: 0 0 75%;
-  }
+  } */
   .check {
     margin-top: 30px;
     margin-bottom: 30px;
   }
   .right {
     text-align: center;
-    flex: 0 0 100%;
   }
   .left {
     width: 70%;
     margin: auto;
     margin-bottom: 10px;
-    flex: 0 0 100%;
   }
 }
