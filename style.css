@@ -12,7 +12,7 @@ img {
 
 body {
   font-family: "Noto Sans Mono", monospace;
-  background-image: url(/background.jpg);
+  background-image: url(img/background.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
