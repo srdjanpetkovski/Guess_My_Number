@@ -121,7 +121,7 @@ responsiveness
   }
   main {
     display: block;
-    margin-top: 50px;
+    margin-top: 40px;
   }
   section {
     flex: 0 0 75%;
@@ -136,6 +136,6 @@ responsiveness
   .left {
     width: 70%;
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 }
