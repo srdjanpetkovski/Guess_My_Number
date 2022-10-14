@@ -6,17 +6,22 @@
   box-sizing: border-box;
 }
 
+img {
+  width: 100%;
+}
+
 body {
   font-family: "Noto Sans Mono", monospace;
   background-image: url(/background.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 60vh;
+  height: 65vh;
 }
 
 header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 50px;
 }
@@ -26,7 +31,7 @@ hgroup {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-top: 80px;
+  margin-top: 65px;
 }
 
 h1,
@@ -46,20 +51,31 @@ p {
 
 main {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin-top: 80px;
 }
+
+/* section {
+  flex: 0 0 30%;
+} */
 
 .left {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex: 0 0 20%;
+}
+
+.right {
+  flex: 0 0 30%;
 }
 
 .guess {
   padding: 15px 30px;
   border: none;
   font-size: 15px;
+  border-radius: 25px;
 }
 
 .btn {
@@ -76,9 +92,48 @@ main {
 
 .btn:hover {
   background-color: #00ffff;
+  box-shadow: 0 0 10px 10px lightgray;
 }
 
-.score,
-.highscore {
+.label-score {
   margin-top: 30px;
+}
+
+/***************
+responsiveness
+***************/
+@media screen and (max-width: 700px) {
+  .between {
+    order: -1;
+  }
+  body {
+    height: 100vh;
+  }
+  header {
+    justify-content: center;
+  }
+  .again {
+    margin-top: 20px;
+  }
+  hgroup {
+    text-align: center;
+    margin-top: 30px;
+  }
+  main {
+    display: block;
+  }
+  section {
+    flex: 0 0 75%;
+  }
+  .check {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .right {
+    text-align: center;
+  }
+  .left {
+    width: 70%;
+    margin: auto;
+  }
 }
